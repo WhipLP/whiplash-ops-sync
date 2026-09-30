@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connecting — Whiplash Ops Sync</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+<h1>Connecting Whiplash Ops Sync</h1>
+
+<p>Redirecting back to the Whiplash internal dashboard on this computer…</p>
+
+<p><a id="fallback" href="#">Click here if you are not redirected automatically</a></p>
+
+<footer>Whiplash Ops Sync · Internal business application</footer>
+</main>
+<script>
+  var target = "http://localhost:8790/qbo/callback" + window.location.search;
+  document.getElementById("fallback").href = target;
+  window.location.replace(target);
+</script>
+</body>
+</html>
